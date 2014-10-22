@@ -1,0 +1,8 @@
+.one_test_link:hover .mega-hover-mh {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+.mega-hover-mh:hover, .mega-hover-mh:focus {
+	text-decoration: none;
+}
