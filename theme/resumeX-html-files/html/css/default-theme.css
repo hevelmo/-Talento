@@ -19,8 +19,19 @@ h1.section-heading {
 .arrow-right {
     border-color:transparent transparent transparent #248a97;
 }
-.tags ul li.selected,.tags ul li:hover {
+.tags ul li a {
+    color: #248a97;
+}
+.tags ul li:hover a {
+    color: #fff;
+}
+.tags ul li.selected,.tags ul li:hover{
     border-color:#248a97;
+    color: #fff;
+}
+.tags ul li.selected a {
+    border-color:#248a97;
+    color: #fff;
 }
 .location-map {
     border-bottom:#248a97 6px solid;
