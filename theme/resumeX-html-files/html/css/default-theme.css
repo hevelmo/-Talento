@@ -6,8 +6,12 @@ h1.section-heading,.section-counter,.btn-search,.btn-view-all,.btn-post-cmnt,.bl
     background-color:#248a97;
 }
 h1.section-heading {
-    font-size: 40pt;
+    font-size: 1,75em;
     text-transform: uppercase;
+}
+.color_strong_title {
+    color: #248a97;
+    font-size: 1.5em;
 }
 .arrow-left {
     border-color:transparent #248a97 transparent transparent;

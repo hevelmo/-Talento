@@ -74,7 +74,7 @@
                                     <ul class="nav navbar-nav pull-right top-nav sf-menu">
                                         <li><a href="#slides">Inicio</a></li>
                                         <li><a href="#about-me">Sobre mi</a></li>
-                                        <li><a href="#skill-section">Servicios</a></li>
+                                        <li><a href="#portfolio">Servicios</a></li>
                                         <li><a href="#experiences">Contacto</a></li>
                                     </ul>
                                 </div>
@@ -482,9 +482,10 @@
         <div class="row">
             <div class="col-md-12">
                 <!-- Modal -->
-                <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <a href="#x" class="overlay-conf-ia" id="modal-conf-ai"></a>
+                <div class="popup-conf-ia">
                     <div class="container-fluid portfolio-modal">
-                        <a class="close modal-exit" data-dismiss="modal" aria-hidden="true">&times;</a>
+                        <a href="#close" class="close modal-exit" data-dismiss="modal" aria-hidden="true">&times;</a>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="modal-img">
@@ -493,9 +494,9 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="portfolio-modal-content">
-                                    <h3>This is title</h3>
+                                    <h3>Conferencias de alto impacto</h3>
                                     <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                                        Es una experiencia que lleva a los participantes a la reflexión, a la acción y  cambio de paradigmas. Con un tema especifico y duración promedio de  2 horas.
                                     </p>
                                     <a href="#" class="btn btn-view-all">Live Demo</a>
                                 </div>
@@ -516,7 +517,9 @@
             <div class="tags filter-nav">
                 <ul>
                     <li class="filter selected" data-category="cat-all">Todas las categorías</li>
-                    <li class="filter" data-category="cat-one">Conferencias</li>
+                    <li class="filter" data-category="cat-conferencias">Conferencias</li>
+                    <li class="filter" data-category="cat-talleres">Talleres</li>
+                    <li class="filter" data-category="cat-consultorias">Consultorías</li>
                 </ul>
             </div>
             <div class="clear">
@@ -524,102 +527,71 @@
             <div class="block full" style="background: none; border: none;">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="one_test_link">
-                            <div class="widget-content themed-background-dark-default text-light-op" style="padding-top: 15px; padding-bottom: 15px; font-size: 1.3em;">
-                                <i class="fa fa-fw fa-lg fa-pencil"></i> <strong class="color_strong_title">Conferencias de alto impacto</strong>
+                        <div class="one_test_link cat-conferencias cat-all">
+                            <img src="../web/img/conf1.png" alt="Conferencias de alto impacto" class="eval_img text-center" style="padding: 25px 50px; margin: 0 auto; width: 100%; height: 320px;">
+                            <div class="widget-content themed-background-dark-default text-light-op text-center">
+                                <strong class="color_strong_title">Conferencias de alto impacto</strong>
                             </div>
-                            <img src="../web/img/conf1.png" alt="Conferencias de alto impacto" class="eval_img text-center" style="padding: 0 50px; margin: 0 auto; width: 100%;">
-                            <a href="#" class="one_test_options" title="" disabled="disabled">
-                                <div class="mega-hover-mh alone">
-                                    <div class="mega-hovertitle-mht">
-                                        Conferencias de alto impacto
-                                        <div class="mega-hoversubtitle">
-                                            Categoría - Conferencias
-                                        </div>
+                            <div class="one_test_options mega-hover-mh alone panel-conf-ia">
+                                <div class="mega-hovertitle-mht">
+                                    Conferencias de alto impacto
+                                    <div class="mega-hoversubtitle">
+                                        Categoría - Conferencias
                                     </div>
-                                    <a href="#modal-conf-ai" data-toggle="modal" data-target="#portfolioModal">
-                                        <div class="mega-hoverview">
-
-                                        </div>
-                                    </a>
                                 </div>
-                            </a>
+                                <a href="#modal-conf-ai" data-toggle="modal" data-target="#portfolioModal">
+                                    <div class="mega-hoverview-mhl">
+                                        <i class="fa fa-eye fa-2x fa-lg fa-fw"></i> Ver Categoria
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="one_test_link cat-talleres cat-all">
+                            <img src="../web/img/conf2.png" alt="Talleres, seminarios y diplomados." class="eval_img text-center" style="padding: 25px 50px; margin: 0 auto; width: 100%; height: 320px;">
+                            <div class="widget-content themed-background-dark-default text-light-op text-center">
+                                <strong class="color_strong_title">Talleres, seminarios y diplomados.</strong>
+
+                            </div>
+                            <div class="one_test_options mega-hover-mh alone">
+                                <div class="mega-hovertitle-mht">
+                                    Talleres, seminarios y diplomados.
+                                    <div class="mega-hoversubtitle">
+                                        Categoría - Talleres
+                                    </div>
+                                </div>
+                                <a href="#modal-conf-tal" data-toggle="modal" data-target="#portfolioModal">
+                                    <div class="mega-hoverview-mhl">
+                                        <i class="fa fa-eye fa-2x fa-lg fa-fw"></i> Ver Categoria
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="one_test_link">
-                            <div class="widget-content themed-background-dark-default text-light-op" style="padding-top: 15px; padding-bottom: 15px; font-size: 1.3em;">
-                                <i class="fa fa-fw fa-lg fa-pencil"></i> <strong class="color_strong_title">Conferencias de alto impacto</strong>
+                            <img src="../web/img/conf3.png" alt="Coaching y consultoría personalizada" class="eval_img text-center" style="padding: 25px 50px; margin: 0 auto; width: 100%; height: 320px;">
+                            <div class="widget-content themed-background-dark-default text-light-op text-center">
+                                <strong class="color_strong_title">Coaching y consultoría personalizada</strong>
                             </div>
-                            <img src="../web/img/conf1.png" alt="Conferencias de alto impacto" class="eval_img text-center" style="padding: 0 50px; margin: 0 auto; width: 100%;">
-                            <a href="#" class="one_test_options" title="" disabled="disabled">
-                                <div class="mega-hover-mh alone">
-                                    <div class="mega-hovertitle-mht">
-                                        Conferencias de alto impacto
-                                        <div class="mega-hoversubtitle">
-                                            Categoría - Conferencias
-                                        </div>
+                            <div class="one_test_options mega-hover-mh alone">
+                                <div class="mega-hovertitle-mht">
+                                    Coaching y consultoría personalizada
+                                    <div class="mega-hoversubtitle">
+                                        Categoría - Consultoría
                                     </div>
-                                    <a href="#modal-conf-ai" data-toggle="modal" data-target="#portfolioModal">
-                                        <div class="mega-hoverview">
-
-                                        </div>
-                                    </a>
                                 </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="one_test_link">
-                            <div class="widget-content themed-background-dark-default text-light-op" style="padding-top: 15px; padding-bottom: 15px; font-size: 1.3em;">
-                                <i class="fa fa-fw fa-lg fa-pencil"></i> <strong class="color_strong_title">Conferencias de alto impacto</strong>
-                            </div>
-                            <img src="../web/img/conf1.png" alt="Conferencias de alto impacto" class="eval_img text-center" style="padding: 0 50px; margin: 0 auto; width: 100%;">
-                            <a href="#" class="one_test_options" title="" disabled="disabled">
-                                <div class="mega-hover-mh alone">
-                                    <div class="mega-hovertitle-mht">
-                                        Conferencias de alto impacto
-                                        <div class="mega-hoversubtitle">
-                                            Categoría - Conferencias
-                                        </div>
+                                <a href="#modal-conf-cons" data-toggle="modal" data-target="#portfolioModal">
+                                    <div class="mega-hoverview-mhl">
+                                        <i class="fa fa-eye fa-2x fa-lg fa-fw"></i> Ver Categoria
                                     </div>
-                                    <a href="#modal-conf-ai" data-toggle="modal" data-target="#portfolioModal">
-                                        <div class="mega-hoverview">
-
-                                        </div>
-                                    </a>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal Terms -->
-            <div id="modal-conf-ai" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title text-center"><strong>Terms and Conditions</strong></h3>
-                        </div>
-                        <div class="modal-body">
-                            <h4 class="page-header">1. <strong>General</strong></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta. Integer fermentum tincidunt auctor.</p>
-                            <h4 class="page-header">2. <strong>Account</strong></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta. Integer fermentum tincidunt auctor.</p>
-                            <h4 class="page-header">3. <strong>Service</strong></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta. Integer fermentum tincidunt auctor.</p>
-                            <h4 class="page-header">4. <strong>Payments</strong></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices, justo vel imperdiet gravida, urna ligula hendrerit nibh, ac cursus nibh sapien in purus. Mauris tincidunt tincidunt turpis in porta. Integer fermentum tincidunt auctor.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="text-center">
-                                <button type="button" class="btn btn-effect-ripple btn-sm btn-primary" data-dismiss="modal">I've read them!</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- END Modal Terms -->
         </section>
         </div>
         </div>
@@ -935,7 +907,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="wow slideInLeft">
-                                <img src="../theme/resumeX-html-files/html/img/footer-logo.png" alt="">
+                                <img src="../web/img/sign.jpg" alt="">
                                 <p>
                                     PO Box 16122 Collins Street West <br/>
                                     Victoria 8007 Australia
@@ -999,7 +971,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            &copy; 2014 +Talentos. Todos los derechos reservadis.
+                            &copy; 2014 +Talentos. Todos los derechos reservados.
                         </div>
                     </div>
                 </div>
@@ -1007,74 +979,74 @@
         </div>
         <!--section contact end-->
         <!-- jQuery v1.10.2  -->
-        <script src="../theme/resumeX-html-files/html/js/jquery.js"></script>
-        <script src="../theme/resumeX-html-files/html/js/royal_preloader.js"></script>
-        <script type="text/javascript">
-            var images = {
-                'Banner One':     '../web/img/banner_ini.jpg',
-                /*'Banner Two':     'http://rxhtml.themebucket.net/img/banner2.jpg',
-                'Banner Three':     'http://rxhtml.themebucket.net/img/banner3.jpg',
-                'Theme Bucket':  'http://rxhtml.themebucket.net/img/p1.jpg',
-                'About Me':     'http://rxhtml.themebucket.net/img/about-bg.jpg',
-                'Experience':   'http://rxhtml.themebucket.net/img/experience-bg.jpg',
-                'Connect Monitor': 'http://rxhtml.themebucket.net/img/connect-monitor.png'
-                */
-            };
-            // config
-            Royal_Preloader.config({
-                mode:       'number',
-                images:     images,
-                timeout:    20,
-                showInfo:   true,
-                background: ['#FA6862']
-            });
-        </script>
-        <!-- Bootstrap v3.1.0-->
-        <script src="../theme/resumeX-html-files/html/js/bootstrap.js"></script>
-        <script src="../theme/resumeX-html-files/html/js/jquery-ui-1.10.4.custom.min.js"></script>
-        <!-- jQuery REVOLUTION Slider -->
-        <script src="../theme/resumeX-html-files/html/js/jquery.revslider.plugins.min.js"></script>
-        <script src="../theme/resumeX-html-files/html/js/jquery.themepunch.revolution.js"></script>
-        <!-- Scroll Top-->
-        <script src="../theme/resumeX-html-files/html/js/jquery.scrollUp.js"></script>
-        <!-- Easing Effect-->
-        <script src="../theme/resumeX-html-files/html/js/jquery.easing.js"></script>
-        <!-- Knob-->
-        <script src="../theme/resumeX-html-files/html/js/jquery.easypiechart.js"></script>
-        <!-- One Page Nav-->
-        <script src="../theme/resumeX-html-files/html/js/jquery.nav.js"></script>
-        <!-- Scroll To-->
-        <script src="../theme/resumeX-html-files/html/js/jquery.scrollTo.js"></script>
-        <!-- Sticky Nav-->
-        <script src="../theme/resumeX-html-files/html/js/waypoints.js"></script>
-        <script src="../theme/resumeX-html-files/html/js/waypoints-sticky.js"></script>
-        <!-- Elements Animation On Scroll -->
-        <script src="../theme/resumeX-html-files/html/js/wow.js"></script>
-        <!-- jQuery Fittext -->
-        <script src="../theme/resumeX-html-files/html/js/jquery.fittext.js"></script>
-        <!-- Appear Animation -->
-        <script src="../theme/resumeX-html-files/html/js/jquery.appear.js"></script>
-        <!-- Masonry Grid -->
-        <script src="../theme/resumeX-html-files/html/js/jquery.isotope.js"></script>
-        <!-- Smooth Scroll Effect -->
-        <script src="../theme/resumeX-html-files/html/js/jquery.smooth-scroll.js"></script>
-        <!-- Google Map Api -->
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>
-        <!-- MEGAFOLIO GALLERY  JS FILES  -->
-        <script src="../theme/resumeX-html-files/html/js/jquery.megafolio.plugins.min.js"></script>
-        <script src="../theme/resumeX-html-files/html/js/jquery.themepunch.megafoliopro.js"></script>
-        <!-- Magnific Popup core JS file -->
-        <script src="../theme/resumeX-html-files/html/js/jquery.magnific-popup.js"></script>
-        <!-- jQuery OwlCarousel -->
-        <script src="../theme/resumeX-html-files/html/js/owl.carousel.js"></script>
-        <!-- Drop Down Menu -->
-        <script src="../theme/resumeX-html-files/html/js/hoverIntent.js"></script>
-        <script src="../theme/resumeX-html-files/html/js/superfish.js"></script>
-        <!-- Syntax Highlighter -->
-        <script src="../theme/resumeX-html-files/html/js/prettify.js"></script>
-        <!-- Flickr Feed -->
-        <script src="../theme/resumeX-html-files/html/js/jflickrfeed.js"></script>
-        <!-- Plugins Initialize Scripts -->
-        <script src="../theme/resumeX-html-files/html/js/scripts.js"></script>
+            <script src="../theme/resumeX-html-files/html/js/jquery.js"></script>
+            <script src="../theme/resumeX-html-files/html/js/royal_preloader.js"></script>
+            <script type="text/javascript">
+                var images = {
+                    'Banner One':     '../web/img/banner_ini.jpg',
+                    /*'Banner Two':     'http://rxhtml.themebucket.net/img/banner2.jpg',
+                    'Banner Three':     'http://rxhtml.themebucket.net/img/banner3.jpg',
+                    'Theme Bucket':  'http://rxhtml.themebucket.net/img/p1.jpg',
+                    'About Me':     'http://rxhtml.themebucket.net/img/about-bg.jpg',
+                    'Experience':   'http://rxhtml.themebucket.net/img/experience-bg.jpg',
+                    'Connect Monitor': 'http://rxhtml.themebucket.net/img/connect-monitor.png'
+                    */
+                };
+                // config
+                Royal_Preloader.config({
+                    mode:       'number',
+                    images:     images,
+                    timeout:    20,
+                    showInfo:   true,
+                    background: ['#FA6862']
+                });
+            </script>
+            <!-- Bootstrap v3.1.0-->
+            <script src="../theme/resumeX-html-files/html/js/bootstrap.js"></script>
+            <script src="../theme/resumeX-html-files/html/js/jquery-ui-1.10.4.custom.min.js"></script>
+            <!-- jQuery REVOLUTION Slider -->
+            <script src="../theme/resumeX-html-files/html/js/jquery.revslider.plugins.min.js"></script>
+            <script src="../theme/resumeX-html-files/html/js/jquery.themepunch.revolution.js"></script>
+            <!-- Scroll Top-->
+            <script src="../theme/resumeX-html-files/html/js/jquery.scrollUp.js"></script>
+            <!-- Easing Effect-->
+            <script src="../theme/resumeX-html-files/html/js/jquery.easing.js"></script>
+            <!-- Knob-->
+            <script src="../theme/resumeX-html-files/html/js/jquery.easypiechart.js"></script>
+            <!-- One Page Nav-->
+            <script src="../theme/resumeX-html-files/html/js/jquery.nav.js"></script>
+            <!-- Scroll To-->
+            <script src="../theme/resumeX-html-files/html/js/jquery.scrollTo.js"></script>
+            <!-- Sticky Nav-->
+            <script src="../theme/resumeX-html-files/html/js/waypoints.js"></script>
+            <script src="../theme/resumeX-html-files/html/js/waypoints-sticky.js"></script>
+            <!-- Elements Animation On Scroll -->
+            <script src="../theme/resumeX-html-files/html/js/wow.js"></script>
+            <!-- jQuery Fittext -->
+            <script src="../theme/resumeX-html-files/html/js/jquery.fittext.js"></script>
+            <!-- Appear Animation -->
+            <script src="../theme/resumeX-html-files/html/js/jquery.appear.js"></script>
+            <!-- Masonry Grid -->
+            <script src="../theme/resumeX-html-files/html/js/jquery.isotope.js"></script>
+            <!-- Smooth Scroll Effect -->
+            <script src="../theme/resumeX-html-files/html/js/jquery.smooth-scroll.js"></script>
+            <!-- Google Map Api -->
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>
+            <!-- MEGAFOLIO GALLERY  JS FILES  -->
+            <script src="../theme/resumeX-html-files/html/js/jquery.megafolio.plugins.min.js"></script>
+            <script src="../theme/resumeX-html-files/html/js/jquery.themepunch.megafoliopro.js"></script>
+            <!-- Magnific Popup core JS file -->
+            <script src="../theme/resumeX-html-files/html/js/jquery.magnific-popup.js"></script>
+            <!-- jQuery OwlCarousel -->
+            <script src="../theme/resumeX-html-files/html/js/owl.carousel.js"></script>
+            <!-- Drop Down Menu -->
+            <script src="../theme/resumeX-html-files/html/js/hoverIntent.js"></script>
+            <script src="../theme/resumeX-html-files/html/js/superfish.js"></script>
+            <!-- Syntax Highlighter -->
+            <script src="../theme/resumeX-html-files/html/js/prettify.js"></script>
+            <!-- Flickr Feed -->
+            <script src="../theme/resumeX-html-files/html/js/jflickrfeed.js"></script>
+            <!-- Plugins Initialize Scripts -->
+            <script src="../theme/resumeX-html-files/html/js/scripts.js"></script>
     </body>
 </html>

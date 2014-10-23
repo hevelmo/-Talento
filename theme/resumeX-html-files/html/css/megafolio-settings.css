@@ -379,6 +379,7 @@ website:   	http://www.themepunch.com
 											opacity: 0;
 										}
 
+	.norounded .mega-hover-mh,
 	.norounded .mega-hover				{	border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px;}
 
 
@@ -388,6 +389,7 @@ website:   	http://www.themepunch.com
 
 
 	.mega-hovertitle,
+	.mega-hovertitle-mht,
 	.mega-hoverlink,
 	.mega-hoverview
 										{	-webkit-transition: all 0.2s ease-out;
@@ -435,10 +437,17 @@ website:   	http://www.themepunch.com
 											-khtml-opacity: 1;
 											opacity: 1;
 										}
+	.mega-hovertitle-mht .mega-hoversubtitle,
 	.mega-hovertitle .mega-hoversubtitle			{	color:#aaa; font-size:12px; line-height:13px; font-weight: 400; margin-top: 5px;}
 
 
-	.mega-hoverlink						{	right:50%; margin-right:33px; background:url(../img/link.png) no-repeat center;
+	.mega-hoverlink-mhl					{	right:50%; margin-right:33px; background:url(../img/link.png) no-repeat center;
+											-webkit-transform: translateZ(10);
+											-webkit-backface-visibility: visible;
+											-webkit-perspective: 1000;
+
+										}
+	.mega-hoverview						{	right:50%; margin-right:33px; background:url(../img/link.png) no-repeat center;
 											-webkit-transform: translateZ(10);
 											-webkit-backface-visibility: hidden;
 											-webkit-perspective: 1000;
@@ -452,6 +461,22 @@ website:   	http://www.themepunch.com
 
 										}
 
+	.mega-hoverview-mhl					{
+											width: 200px;
+											height: 33px;
+											position: absolute;
+											top: 62%;
+											text-align: center;
+											margin-top: 0px;
+											cursor: pointer;
+											-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+											filter: alpha(opacity=1);
+											-moz-opacity: 1;
+											-khtml-opacity: 1;
+											opacity: 1;
+											left: 23%;
+											color: #fff;
+										}
 	.mega-hoverlink,
 	.mega-hoverview						{	width:33px; height:33px; position:absolute;
 
