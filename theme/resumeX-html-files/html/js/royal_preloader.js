@@ -69,7 +69,7 @@ var Royal_Preloader = {
     }(),
 
     _background: function() {
-        return typeof Royal_Preloader !== 'undefined' && typeof Royal_Preloader._background !== 'undefined' ? Royal_Preloader._background : ['#000000'];
+        return typeof Royal_Preloader !== 'undefined' && typeof Royal_Preloader._background !== 'undefined' ? Royal_Preloader._background : ['#0099A8'];
     }(),
 
     _logo: function() {
@@ -118,7 +118,10 @@ var Royal_Preloader = {
     // build loader DOM
     _build: function() {
         this._overlay    = $('<div>').attr('id', 'royal_preloader').addClass(this._mode);
-        this._overlay_bg = $('<div>').addClass('background').appendTo(this._overlay).css('background-color', this._background[0]);
+        this._overlay_bg = $('<div>').addClass('background').appendTo(this._overlay).css({
+            'background':'#0099A8'
+            //'background-color': this._background[0]
+        });
 
         if (this._mode === 'number') {
             this._percentage = $('<div>').addClass('percentage').appendTo(this._overlay);
@@ -127,8 +130,14 @@ var Royal_Preloader = {
             this._text_loader_overlay = $('<div>').css('background-color', this._background[0]).appendTo(this._text_loader);
         } else {
             this._logo_loader         = $('<div>').css('background-image', 'url("' + this._logo + '")').addClass('loader').appendTo(this._overlay);
-            this._logo_loader_meter   = $('<div>').css('background-color', this._background[0]).appendTo(this._logo_loader);
-            this._percentage          = $('<div>').css('background-color', this._background[0]).addClass('percentage').appendTo(this._overlay);
+            this._logo_loader_meter   = $('<div>').css({
+            'background':'#0099A8'
+            //'background-color': this._background[0]
+        }).appendTo(this._logo_loader);
+            this._percentage          = $('<div>').css({
+            'background':'#0099A8'
+            //'background-color': this._background[0]
+        }).addClass('percentage').appendTo(this._overlay);
 
             if (!this._show_percentage) {
                 this._percentage.hide();
@@ -218,9 +227,9 @@ var Royal_Preloader = {
             if (!this._use_css_animation) {
                 this._name.css({opacity:1, top:'50%'});
                 this._name.animate({top:'20%', opacity:0}, 300);
-                this._overlay_bg.animate({'backgroundColor':this._background[this._loaded % this._background.length]}, 300, 'linear');
+                this._overlay_bg.animate({'backgroundColor':'#0099A8'}, 300, 'linear');
             } else {
-                this._overlay_bg.css('background-color', this._background[this._loaded % this._background.length]);
+                this._overlay_bg.css('background-color', '#0099A8');
             }
         }
 

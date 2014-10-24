@@ -1,4 +1,12 @@
+@media (max-width: 1280px)    {
+    .color_strong_capital {
+        font-size: 2.5em;
+    }
+}
 @media (max-width: 1024px)    {
+    .color_strong_capital {
+        font-size: 2.5em;
+    }
 
     .skill, .skillnews {
         margin-bottom: 15px;
@@ -24,6 +32,9 @@
 
 
 @media (min-width: 768px) and (max-width: 980px) {
+    .color_strong_capital {
+        font-size: 2em;
+    }
 
     .container {
         width: 100%;
@@ -67,6 +78,9 @@
 
 
 @media (max-width:767px){
+    .color_strong_capital {
+        font-size: 2.4em;
+    }
     .section-about {
         margin-top: 30px;
     }
@@ -225,6 +239,12 @@
 }
 
 @media (max-width: 479px) {
+    .div_img {
+        width: 250px;
+    }
+    .color_strong_capital {
+        font-size: 16pt;
+    }
     .timeline-divider{
         display: none;
     }

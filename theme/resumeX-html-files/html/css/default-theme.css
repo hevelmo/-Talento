@@ -9,9 +9,13 @@ h1.section-heading {
     font-size: 1,75em;
     text-transform: uppercase;
 }
+
+.color_strong_capital {
+    color: #248a97;
+}
 .color_strong_title {
     color: #248a97;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .arrow-left {
     border-color:transparent #248a97 transparent transparent;
@@ -40,7 +44,7 @@ h1.section-heading {
     border-bottom:10px solid #248a97;
 }
 .contact-form {
-    border-top:#248a97 3px solid;
+    /*border-top:#248a97 3px solid;*/
     border-bottom:#248a97 6px solid;
 }
 .form-toggle-icon {
