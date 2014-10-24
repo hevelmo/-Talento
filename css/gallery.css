@@ -40,16 +40,36 @@
 	max-width: 100%;
 	height: 320px;
 }
-.pub_post, .can_video {
+.can_video {
    position: relative;
-   padding-bottom: 56.25%;
+   padding-bottom: 65.25%;
    overflow: hidden;
 }
-.pub_post .fb-post, .can_video iframe {
+.can_video iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-
+.pub_post {
+   position: relative;
+   padding-bottom: 57.2%;
+   overflow: hidden;
+}
+.pub_post .fb-post {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.boton-top{
+	display: none;
+	width: 50px;
+	text-align: center;
+	color: #fff;
+	background: #0099A8;
+	cursor: pointer;
+	padding: 10px;
+}

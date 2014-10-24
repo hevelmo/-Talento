@@ -76,7 +76,7 @@
                                         <li><a href="#slides">Inicio</a></li>
                                         <li><a href="#about-me">Sobre mi</a></li>
                                         <li><a href="#portfolio">Servicios</a></li>
-                                        <li><a href="#experiences">Contacto</a></li>
+                                        <li><a href="#contact">Contacto</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -145,10 +145,10 @@
                                 <!-- THE FILTER STYLED FOR MEGAFOLIO -->
                                 <div class="tags filter-nav">
                                     <ul class="tabs">
-                                        <li class="filter selected" data-category="cat-all"><a href="#servicios">Servicios</a></li><!--
+                                        <li class="filter selected" data-category="cat-all"><a href="#servicios">Servicios</a></li>
                                         <li class="filter" data-category="cat-conferencias"><a href="#conferencias">Conferencias</a></li>
                                         <li class="filter" data-category="cat-talleres"><a href="#talleres">Talleres</a></li>
-                                        <li class="filter" data-category="cat-consultorias"><a href="#coaching">Coaching</a></li>-->
+                                        <li class="filter" data-category="cat-consultorias"><a href="#coaching">Coaching</a></li>
                                     </ul>
                                 </div>
                                 <div class="clear">
@@ -586,6 +586,7 @@
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
+                                        <span class="boton-top"><i class="fa fa-angle-double-up"></i></span>
                                     </div>
                                     <!-- tab Talleres -->
                                     <div class="tab-content" id="talleres" style="">
@@ -864,6 +865,7 @@
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
+                                        <span class="boton-top"><i class="fa fa-angle-double-up"></i></span>
                                     </div>
                                     <div class="tab-content" id="coaching" style="">
                                         <div class="block full fadeInDownBig animated">
@@ -921,6 +923,7 @@
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
+                                        <span class="boton-top"><i class="fa fa-angle-double-up"></i></span>
                                     </div>
                                 </div>
                             </section>
@@ -932,15 +935,8 @@
         <!--section contact -->
             <div class="section-contact">
                 <div class="map-header" id="contact">
-                    <!--<div class="container">
-                        <span class="map-link">
-                        <i class=" fa fa-map-marker"></i><span>Catch me in the google map</span>
-                        </span>
-                    </div>-->
                 </div>
                 <div class="contact-map">
-                    <!--<div id="" class="location-map">
-                    </div>-->
                     <div class="contact-form panel-hide wow bounceInUp">
                         <div class="form-container">
                             <h3><i class="fa fa-smile-o fa-2x fa-fw fa-lg"></i> Enviame un mensaje</h3>
@@ -996,7 +992,7 @@
                                 <div class="pub_post text-center">
                                     <div id="fb-root"></div>
                                     <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
-                                    <div class="fb-post" data-href="https://www.facebook.com/RicardoGallegosOrnelas/photos/a.835263986516187.1073741827.514024411973481/867893713253214/?type=1" data-width="460">
+                                    <div class="fb-post" data-href="https://www.facebook.com/RicardoGallegosOrnelas/photos/a.835263986516187.1073741827.514024411973481/867893713253214/?type=1" data-width="430">
                                         <div class="fb-xfbml-parse-ignore">
                                             <a href="https://www.facebook.com/RicardoGallegosOrnelas/photos/a.835263986516187.1073741827.514024411973481/867893713253214/?type=1">una publicación</a> de <a href="https://www.facebook.com/RicardoGallegosOrnelas">Ricardo Gallegos Ornelas</a>.
                                         </div>
@@ -1011,7 +1007,7 @@
                                 </h3>
                                 <div class="text-center">
                                     <div class="can_video">
-                                        <iframe width="365" height="365" src="//www.youtube.com/embed/H3_TMqil5FQ" frameborder="0" allowfullscreen></iframe>
+                                        <iframe width="355" height="365" src="//www.youtube.com/embed/H3_TMqil5FQ" frameborder="0" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -1049,7 +1045,21 @@
                     images:     images,
                     timeout:    20,
                     showInfo:   true,
-                    background: ['#FA6862']
+                    background: ['#0099A8']
+                });
+            </script>
+            <script>
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 1880) {
+                        $('.boton-top').fadeIn();
+                    } else {
+                        $('.boton-top').fadeOut();
+                    }
+                });
+
+                $('.boton-top').click(function(){
+                    $(document.body).animate({scrollTop : 1880}, 1100);
+                    return false;
                 });
             </script>
             <!-- Bootstrap v3.1.0-->
@@ -1081,8 +1091,6 @@
             <script src="theme/resumeX-html-files/html/js/jquery.isotope.js"></script>
             <!-- Smooth Scroll Effect -->
             <script src="theme/resumeX-html-files/html/js/jquery.smooth-scroll.js"></script>
-            <!-- Google Map Api -->
-            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&AMP;sensor=false"></script>
             <!-- MEGAFOLIO GALLERY  JS FILES  -->
             <script src="theme/resumeX-html-files/html/js/jquery.megafolio.plugins.min.js"></script>
             <script src="theme/resumeX-html-files/html/js/jquery.themepunch.megafoliopro.js"></script>
@@ -1100,7 +1108,7 @@
             <!-- Plugins Initialize Scripts -->
             <script src="theme/resumeX-html-files/html/js/scripts.js"></script>
             <!-- Overlay categorias script -->
-            <script src="js/jquery.blockUI.js"></script>
             <script src="js/overlay.js"></script>
+
     </body>
 </html>
