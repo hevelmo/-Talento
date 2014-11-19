@@ -73,3 +73,27 @@
 	cursor: pointer;
 	padding: 10px;
 }
+/* AJAX Gif y mensajes de exito o fracaso */
+
+	.ajaxgif{
+	    position: absolute;
+	    left: 856px;
+	    top: 285px;
+	}
+	.msg{
+	    color: white;
+	    font-weight: bold;
+	    height: 32px;
+	    line-height: 32px;
+	    padding: 0 10px;
+	    position: absolute;
+	    right: 680px;
+	    text-transform: uppercase;
+	    min-width: 121px;
+	}
+	.msg_ok{
+	    background: #248a97;
+	}
+	.msg_error{
+	    background: #b92c28;
+	}
