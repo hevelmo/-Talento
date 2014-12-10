@@ -5,6 +5,19 @@ a,a:hover,a:focus,.post-content a:hover,.post-content a:focus,.blog .pagination>
 h1.section-heading,.section-counter,.btn-search,.btn-view-all,.btn-post-cmnt,.bl-status .reply:hover,.blog-tags a.btn-share,.toggle-contact-form,.btn-contact,.custombtn:hover,.timeline-marker,.reddot,.tags ul li.selected,.tags ul li:hover,.map-header,.map-header .map-link {
     background-color:#248a97;
 }
+.btn-contact {
+    background-color: #fff;
+    color: #000;
+}
+:focus {outline:none; box-shadow: none;}
+.btn-contact:hover, .btn-contact:focus, .btn-contact:active {
+    outline: none;
+    background-color: #6EBDB1;
+    color: #000;
+}
+.contact-form h3 {
+    color: #fff;
+}
 h1.section-heading {
     font-size: 1,75em;
     text-transform: uppercase;
@@ -42,6 +55,7 @@ h1.section-heading {
 }
 .map-header {
     border-bottom:10px solid #248a97;
+    background: #248a97;
 }
 .contact-form {
     /*border-top:#248a97 3px solid;*/

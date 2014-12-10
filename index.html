@@ -1,8 +1,17 @@
-<!DOCTYPE html>
-    <html>
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product">
+<!--<![endif]-->
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="ico-maztalentos.ico"/>
         <title>Home</title>
         <link href="theme/resumeX-html-files/html/css/bootstrap.css" type="text/css" rel="stylesheet">
         <link href="theme/resumeX-html-files/html/css/royal_preloader.css" type="text/css" rel="stylesheet">
@@ -148,9 +157,10 @@
                                 <div class="tags filter-nav">
                                     <ul class="tabs">
                                         <li class="filter selected" data-category="cat-all"><a href="#servicios">Servicios</a></li>
-                                        <li class="filter" data-category="cat-conferencias"><a href="#conferencias">Conferencias</a></li>
+                                        <li class="filter nav-conferencias" data-category="cat-conferencias"><a href="#conferencias">Conferencias</a></li>
                                         <li class="filter" data-category="cat-talleres"><a href="#talleres">Talleres</a></li>
                                         <li class="filter" data-category="cat-consultorias"><a href="#coaching">Coaching</a></li>
+                                        <li class="filter" data-category="cat-team-building"><a href="#team-building">Team Buiding</a></li>
                                     </ul>
                                 </div>
                                 <div class="clear">
@@ -159,20 +169,20 @@
                                     <div class="tab-content" id="servicios" style="">
                                         <div class="block full" style="background: none; border: none;">
                                             <div class="row">
-                                                <div class="col-md-4 wow fadeInRightBig animated">
+                                                <div class="col-md-3 wow fadeInRightBig animated">
                                                     <div class="one_test_link cat-conferencias cat-all">
                                                         <div class="row">
                                                             <ul class="tabs" style="padding: 0px;">
                                                                 <li class="filter" data-category="cat-conferencias" style="list-style-type: none;">
-                                                                    <a href="#conferencias" title="Conferencias">
+                                                                    <a href="#conferencias" title="Conferencias" id="tab-conferencias">
                                                                         <div class="text-center"><img src="img/conf1.jpg" alt="Conferencias de alto impacto" class="eval_img text-center ico_gall_img"></div>
                                                                     </a>
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row row-block">
                                                             <div class="widget-content themed-background-dark-default text-light-op text-center">
-                                                                <strong class="color_strong_title">Conferencias de alto impacto.</strong>
+                                                                <strong class="color_strong_title" style="padding: 5px 0 5px 0; font-size: 1.1em;">Conferencias de alto impacto.</strong>
                                                                 <div class="clearfix"></div>
                                                                 <div class="desc-wrap text-justify" style="padding: 10px; margin-top: 10px;">
                                                                     <p>
@@ -195,7 +205,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 wow fadeInUpBig animated">
+                                                <div class="col-md-3 wow fadeInUpBig animated">
                                                     <div class="one_test_link cat-talleres cat-all">
                                                         <div class="row">
                                                             <ul class="tabs" style="padding: 0px;">
@@ -206,9 +216,9 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row row-block">
                                                             <div class="widget-content themed-background-dark-default text-light-op text-center">
-                                                                <strong class="color_strong_title">Talleres, seminarios y diplomados.</strong>
+                                                                <strong class="color_strong_title" style="padding: 5px 0 5px 0; font-size: 1.1em;">Talleres, seminarios y diplomados.</strong>
                                                                 <div class="clearfix"></div>
                                                                 <div class="desc-wrap text-justify" style="padding: 10px; margin-top: 10px;">
                                                                     <p>
@@ -222,19 +232,19 @@
                                                                     </p>
                                                                 </div>
                                                             </div>
-                                                            <div class="row">
-                                                                <ul class="tabs">
-                                                                    <li class="filter text-left" data-category="cat-talleres" style="list-style-type: none;">
-                                                                        <a href="#talleres" title="Talleres, Seminarios y diplomados">
-                                                                            <i class="fa fa-eye fa-lg fa-fw"></i> Ver temas
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <ul class="tabs">
+                                                                <li class="filter text-left" data-category="cat-talleres" style="list-style-type: none;">
+                                                                    <a href="#talleres" title="Talleres, Seminarios y diplomados">
+                                                                        <i class="fa fa-eye fa-lg fa-fw"></i> Ver temas
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 wow fadeInLeftBig animated">
+                                                <div class="col-md-3 wow fadeInLeftBig animated">
                                                     <div class="one_test_link">
                                                         <div class="row">
                                                             <ul class="tabs" style="padding: 0px;">
@@ -245,9 +255,9 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div class="row">
+                                                        <div class="row row-block">
                                                             <div class="widget-content themed-background-dark-default text-light-op text-center">
-                                                                <strong class="color_strong_title">Coaching y consultoría.</strong>
+                                                                <strong class="color_strong_title" style="padding: 5px 0 5px 0; font-size: 1.1em;">Coaching y consultoría.</strong>
                                                                 <div class="clearfix"></div>
                                                                 <div class="desc-wrap text-justify" style="padding: 10px; margin-top: 10px;">
                                                                     <p>
@@ -273,9 +283,43 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="col-md-3 wow fadeInLeftBig animated">
+                                                    <div class="one_test_link">
+                                                        <div class="row">
+                                                            <ul class="tabs" style="padding: 0px;">
+                                                                <li class="filter" data-category="cat-team-building" style="list-style-type: none;">
+                                                                    <a href="#team-building" title="Team Building">
+                                                                        <div class="text-center"><img src="img/conf4.jpg" alt="Team Building" class="eval_img text-center ico_gall_img"></div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="row row-block">
+                                                            <div class="widget-content themed-background-dark-default text-light-op text-center">
+                                                                <strong class="color_strong_title" style="padding: 5px 0 5px 0; font-size: 1.1em;">Team Building.</strong>
+                                                                <div class="clearfix"></div>
+                                                                <div class="desc-wrap text-justify" style="padding: 10px; margin-top: 10px;">
+                                                                    <p>
+                                                                        Es un TALLER, en el que se trabaja  dentro o fuera de salón con el objetivo de desarrollar habilidades para trabajar en equipo, donde vamos desde el trabajo del talento individual pasando por el rol en la empresa, hasta formar equipos de alto rendimiento.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <ul class="tabs">
+                                                                <li class="filter text-left" data-category="cat-team-building" style="list-style-type: none;">
+                                                                    <a href="#team-building" title="Team Building">
+                                                                        <i class="fa fa-eye fa-lg fa-fw"></i> Ver temas
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- tab Conferencias -->
                                     <div class="tab-content" id="conferencias" style="">
                                         <div class="block full fadeInDownBig animated">
                                             <div class="col-md-12">
@@ -285,7 +329,7 @@
                                                         <img src="img/conf1.jpg" alt="Conferencias" class="eval_img text-center ico_thumb_img">
                                                     </div>
                                                     <div class="col-md-7">
-                                                        <strong class="color_strong_capital">CONFERENCIAS</strong>
+                                                        <strong class="color_strong_capital">CONFERENCIAS DE ALTO IMPACTO</strong>
                                                     </div>
                                                     <div class="col-md-2"></div>
                                                 </div>
@@ -438,10 +482,10 @@
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
-                                        <div class="text-center fadeInUpBig animated" style="margin-top: 15px; margin-bottom: 15px;">
+                                        <div class="text-center fadeInUpBig animated" style="display: none; margin-top: 15px; margin-bottom: 15px;">
                                             <img src="img/timeline-divider.png" class="div_img text-center" style="opacity: 0.3;">
                                         </div>
-                                        <div class="row">
+                                        <div class="row" style="display: none;">
                                             <div class="col-md-12">
                                                 <div class="col-md-6 fadeInRightBig animated">
                                                     <div class="col-md-12">
@@ -513,6 +557,7 @@
                                                                     <ul>
                                                                         <li>Tener en blanco y negro objetivos y metas.</li>
                                                                         <li>Poner fechas y estrategias al plan de acción.</li>
+                                                                        <li>Prender el motor para la acción (motiva-acción).</li>
                                                                         <li>Claridad y visión.</li>
                                                                     </ul>
                                                                 </p>
@@ -556,16 +601,19 @@
                                                             <div class="clearfix"></div>
                                                             <div class="desc-wrap text-justify">
                                                                 <p>
-                                                                    Es un taller de desarrollo de la inteligencia emocional, para poner al servicio del participante todos sus recursos  y que trabajen a su favor. Las emociones no son malas ni buenas simplemente, “son emociones”.
+                                                                    Es una conferencia que ofrece herramientas para el desarrollo de la inteligencia emocional y poner al servicio del participante todos sus recursos  para que trabajen a su favor. Las emociones no son malas ni buenas simplemente, “son emociones”.
+                                                                </p>
+                                                                <p>
+                                                                    Se trabaja con la analogía del surf como deporte y la invitación a fluir con la ola (emociones).
                                                                 </p>
                                                                 <p><b>BENEFICIOS:</b></p>
                                                                 <p>
                                                                     <ul>
                                                                         <li>Integrar los recursos emocionales en la persona.</li>
                                                                         <li>Descubrir y experimentar diferentes emociones.</li>
-                                                                        <li>Sanar con conciencia </li>
-                                                                        <li>Aprender a soltar.</li>
-                                                                        <li>“subirme a mis emociones” para crear lo que quiero.</li>
+                                                                        <li>Aprender que las olas emocionales, se mueven y de manera que fluir con ellas, para usarlas a nuestro favor.</li>
+                                                                        <li>Aprender a soltar, emociones que no queremos.</li>
+                                                                        <li>“Subirme a mis emociones” para crear lo que quiero.</li>
                                                                     </ul>
                                                                 </p>
                                                                 <p><b>OBJETIVOS PRINCIPALES:</b></p>
@@ -578,7 +626,7 @@
                                                                     </ul>
                                                                 </p>
                                                                 <p>
-                                                                    DURACION 20 y 24 HORAS
+                                                                    DURACION 2 Horas.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -621,11 +669,11 @@
                                                 <div class="col-md-6 fadeInLeftBig animated">
                                                     <div class="one_test_link" style="">
                                                         <div class="widget-content themed-background-dark-default text-light-op text-center">
-                                                            <strong class="color_strong_title">SEMINARIO DE LIBERTAD FINANCIERA</strong>
+                                                            <strong class="color_strong_title">FINANZAS CON SENTIDO</strong>
                                                             <div class="clearfix"></div>
                                                             <div class="desc-wrap text-justify">
                                                                 <p>
-                                                                    A través de información y dinámicas el participante descubre el camino a la libertad financiera, alternadamente con 2 grandes Coaches, expertos en la materia, donde trabajamos: cambio de hábitos, creencias sobre el dinero, escalera a la libertad financiera y como hacer que el dinero trabaje para nosotros, entre otros temas
+                                                                    El sentido de las finanzas y la libertad financiera, desde el punto vista integral donde puedes generar abundancia y prosperidad haciendo lo que te apasiona y aprendiendo como manejar los dineros. “El sentido de la vida es una vida con sentido”.
                                                                 </p>
                                                                 <p><b>BENEFICIOS:</b></p>
                                                                 <p>
@@ -639,16 +687,71 @@
                                                                 <p><b>OBJETIVOS PRINCIPALES:</b></p>
                                                                 <p>
                                                                     <ul>
-                                                                        <li>Escalera a la libertad financiera.</li>
+                                                                        <li>Conciencia Financiera.</li>
                                                                         <li>Cómo funciona el dinero.</li>
                                                                         <li>El patrón del dinero y creencias limitantes.</li>
-                                                                        <li>Cómo funcionan las tarjetas de crédito.</li>
+                                                                        <li>Cómo funcionan los créditos en general y tarjetas de crédito.</li>
                                                                         <li>Como hacer dinero, sin dinero.</li>
                                                                         <li>Como controlar y apalancarte de las deudas.</li>
+                                                                        <li>Negociación.</li>
                                                                     </ul>
                                                                 </p>
                                                                 <p>
-                                                                    DURACION: 22 horas de trabajo
+                                                                    DURACION: 21 horas de trabajo
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="text-center fadeInUpBig animated" style="margin-top: 15px; margin-bottom: 15px;">
+                                            <img src="img/timeline-divider.png" class="div_img text-center" style="opacity: 0.3;">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="col-md-6 fadeInRightBig animated">
+                                                    <div class="col-md-12">
+                                                        <div class="one_test_link" style="">
+                                                            <img src="img/img-gall3.jpg" alt="Conferencias de alto impacto, talleres, seminarios y diplomados" class="eval_img text-center" style="width: 100%; height: auto; margin-bottom: 20px;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 fadeInLeftBig animated">
+                                                    <div class="one_test_link" style="">
+                                                        <div class="widget-content themed-background-dark-default text-light-op text-center">
+                                                            <strong class="color_strong_title">SURFEANDO CON MIS EMOCIONES</strong>
+                                                            <div class="clearfix"></div>
+                                                            <div class="desc-wrap text-justify">
+                                                                <p>
+                                                                    Es una conferencia que ofrece herramientas para el desarrollo de la inteligencia emocional y poner al servicio del participante todos sus recursos  para que trabajen a su favor. Las emociones no son malas ni buenas simplemente, “son emociones”.
+                                                                </p>
+                                                                <p>
+                                                                    Se trabaja con la analogía del surf como deporte y la invitación a fluir con la ola (emociones).
+                                                                </p>
+                                                                <p><b>BENEFICIOS:</b></p>
+                                                                <p>
+                                                                    <ul>
+                                                                        <li>Integrar los recursos emocionales en la persona.</li>
+                                                                        <li>Descubrir y experimentar diferentes emociones.</li>
+                                                                        <li>Aprender que las olas emocionales, se mueven y de manera que fluir con ellas, para usarlas a nuestro favor.</li>
+                                                                        <li>Aprender a soltar, emociones que no queremos.</li>
+                                                                        <li>“Subirme a mis emociones” para crear lo que quiero.</li>
+                                                                    </ul>
+                                                                </p>
+                                                                <p><b>OBJETIVOS PRINCIPALES:</b></p>
+                                                                <p>
+                                                                    <ul>
+                                                                        <li>Conocer las emociones en su definición y sensación.</li>
+                                                                        <li>Aprender a ponerle nombre y apellido a aquello que siento.</li>
+                                                                        <li>Manejar de forma adecuada mis emociones.</li>
+                                                                        <li>Impulsar mis emociones para dar mejores resultados en mi vida.</li>
+                                                                    </ul>
+                                                                </p>
+                                                                <p>
+                                                                    DURACION 2 horas.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -698,7 +801,7 @@
                                                                     </ul>
                                                                 </p>
                                                                 <p>
-                                                                    DURACION: 6 a 8 horas
+                                                                    DURACION: 6 a 8 horas.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -727,137 +830,31 @@
                                                             <div class="clearfix"></div>
                                                             <div class="desc-wrap text-justify">
                                                                 <p>
-                                                                    Este taller trabaja con los talentos individuales y los saca a la luz, para que aporten al trabajo en equipo, el trabajo puede ser totalmente en salón o una parte en al aire libre.
+                                                                    Desarrollar habilidades en los participantes, para que sean capaces de preparar, impartir y evaluar un taller de capacitación o actualización de su especialidad por medio de técnicas que faciliten la enseñanza-aprendizaje. El participante encuentra su propio estilo y de esta manera el impacto es mayor, en los grupos con los que trabaja.
                                                                 </p>
                                                                 <p><b>BENEFICIOS:</b></p>
                                                                 <p>
                                                                     <ul>
-                                                                        <li>De manera individual, reconocer mis talentos.</li>
-                                                                        <li>Sinergia en el equipo.</li>
-                                                                        <li>Mejor ambiente de trabajo</li>
-                                                                        <li>Comunicación más directa.</li>
-                                                                        <li>Madurez emocional.</li>
-                                                                        <li>Acciones con dirección y resultados.</li>
-                                                                        <li>Compromiso en los participantes de equipo.</li>
+                                                                        <li>Desarrollo de habilidades para impartir un taller o curso.</li>
+                                                                        <li>Herramientas prácticas de PNL, Coaching, comunicación, etc.</li>
+                                                                        <li>Descubrir cuál es el principal talento y como lo uso de manera natural frente a un público.</li>
+                                                                        <li>Diferentes técnicas de enseñanza y aprendizaje acelerado.</li>
                                                                     </ul>
                                                                 </p>
                                                                 <p><b>OBJETIVOS PRINCIPALES:</b></p>
                                                                 <p>
                                                                     <ul>
-                                                                        <li>Darme cuenta de mis talentos y ponerlos a mi servicio y del equipo de trabajo.</li>
-                                                                        <li>Saber cuáles son las formas de trabajar en equipo.</li>
-                                                                        <li>“Servirme sirviendo” es decir, cuando aporto al equipo el que más se beneficia soy yo.</li>
-                                                                        <li>Integración del equipo de trabajo.</li>
-                                                                        <li>Generar un ambiente de trabajo armonioso y de calidad humana.</li>
+                                                                        <li>Principios básicos en la enseñanza-aprendizaje.</li>
+                                                                        <li>Teoría del modelo de Hermann o Endotipos de (Cuauhtli Arau).</li>
+                                                                        <li>Como detectar necesidades. Sensibilidad y autoconocimiento.</li>
+                                                                        <li>Dinámicas de grupo.</li>
+                                                                        <li>Técnicas y materiales didácticos.</li>
+                                                                        <li>Desarrollar habilidades de comunicación integral, como hablar en publico.</li>
+                                                                        <li>Desarrollo y exposición de un tema en equipo. Desarrollar habilidades de comunicación integral.</li>
                                                                     </ul>
                                                                 </p>
                                                                 <p>
-                                                                    DURACION: 8, 16 y 20 HORAS
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="text-center fadeInUpBig animated" style="margin-top: 15px; margin-bottom: 15px;">
-                                            <img src="img/timeline-divider.png" class="div_img text-center" style="opacity: 0.3;">
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="col-md-6 fadeInRightBig animated">
-                                                    <div class="col-md-12">
-                                                        <div class="one_test_link" style="">
-                                                            <img src="img/img-gall3.jpg" alt="Conferencias de alto impacto, talleres, seminarios y diplomados" class="eval_img text-center" style="width: 100%; height: auto; margin-bottom: 20px;">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 fadeInLeftBig animated">
-                                                    <div class="one_test_link" style="">
-                                                        <div class="widget-content themed-background-dark-default text-light-op text-center">
-                                                            <strong class="color_strong_title">SURFEANDO CON MIS EMOCIONES</strong>
-                                                            <div class="clearfix"></div>
-                                                            <div class="desc-wrap text-justify">
-                                                                <p>
-                                                                    Es un taller de desarrollo de la inteligencia emocional, para poner al servicio del participante todos sus recursos  y que trabajen a su favor. Las emociones no son malas ni buenas simplemente, “son emociones”.
-                                                                </p>
-                                                                <p><b>BENEFICIOS:</b></p>
-                                                                <p>
-                                                                    <ul>
-                                                                        <li>Integrar los recursos emocionales en la persona.</li>
-                                                                        <li>Descubrir y experimentar diferentes emociones.</li>
-                                                                        <li>Sanar con conciencia </li>
-                                                                        <li>Aprender a soltar.</li>
-                                                                        <li>“subirme a mis emociones” para crear lo que quiero.</li>
-                                                                    </ul>
-                                                                </p>
-                                                                <p><b>OBJETIVOS PRINCIPALES:</b></p>
-                                                                <p>
-                                                                    <ul>
-                                                                        <li>Conocer las emociones en su definición y sensación.</li>
-                                                                        <li>Aprender a ponerle nombre y apellido a aquello que siento.</li>
-                                                                        <li>Manejar de forma adecuada mis emociones.</li>
-                                                                        <li>Impulsar mis emociones para dar mejores resultados en mi vida.</li>
-                                                                    </ul>
-                                                                </p>
-                                                                <p>
-                                                                    DURACION 20 y 24 HORAS
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div class="text-center fadeInUpBig animated" style="margin-top: 15px; margin-bottom: 15px;">
-                                            <img src="img/timeline-divider.png" class="div_img text-center" style="opacity: 0.3;">
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="col-md-6 fadeInRightBig animated">
-                                                    <div class="col-md-12">
-                                                        <div class="one_test_link" style="">
-                                                            <img src="img/img-gall1.jpg" alt="Conferencias de alto impacto" class="eval_img text-center" style="width: 100%; height: auto; margin-bottom: 20px;">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 fadeInLeftBig animated">
-                                                    <div class="one_test_link" style="">
-                                                        <div class="widget-content themed-background-dark-default text-light-op text-center">
-                                                            <strong class="color_strong_title">TEAM BUILDING (OTUT-DOOR)</strong>
-                                                            <div class="clearfix"></div>
-                                                            <div class="desc-wrap text-justify">
-                                                                <p>
-                                                                    Es un TALLER, en el que se trabaja  fuera de salón, en contacto con la naturaleza. Puede ser con actividades extremas (como escalada, rappel, tirolesa). Con el objetivo de crear equipos de alto rendimiento. Un entrenamiento de este tipo impulsa al participante a generar cambios de paradigmas y creencias.
-                                                                </p>
-                                                                <p><b>BENEFICIOS:</b></p>
-                                                                <p>
-                                                                    <ul>
-                                                                        <li>Crear sinergia y trabajo en equipo.</li>
-                                                                        <li>Trabajar con miedos y fobias</li>
-                                                                        <li>Liberar obstáculos y ampliar visión.</li>
-                                                                        <li>Romper paradigmas</li>
-                                                                        <li>Mejora la comunicación notablemente.</li>
-                                                                    </ul>
-                                                                </p>
-                                                                <p><b>OBJETIVOS PRINCIPALES:</b></p>
-                                                                <p>
-                                                                    <ul>
-                                                                        <li>Integración del equipo de trabajo, unión y sinergia.</li>
-                                                                        <li>Trabajar miedos, que limitan al equipo.</li>
-                                                                        <li>Contactar con la parte humana</li>
-                                                                        <li>Trabajar con las actitudes.</li>
-                                                                        <li>Conciencia de la trascendencia que tiene cada integrante del equipo</li>
-                                                                        <li>Por ser un taller en contacto con la naturaleza, los participantes se abren.</li>
-                                                                        <li>El líder toma decisiones en conjunto</li>
-                                                                    </ul>
-                                                                </p>
-                                                                <p>
-                                                                    DURACION: 6, 8, 12 y 16 HORAS
+                                                                    DURACION: 24 y 48 horas.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -869,6 +866,7 @@
                                         </div>
                                         <span class="boton-top"><i class="fa fa-angle-double-up"></i></span>
                                     </div>
+                                    <!-- tab Coaching -->
                                     <div class="tab-content" id="coaching" style="">
                                         <div class="block full fadeInDownBig animated">
                                             <div class="col-md-12">
@@ -916,6 +914,132 @@
                                                                 <p>Aquí trabajamos diferentes áreas, como son: salud, finanzas, relaciones, negocios, etc. Y se le da prioridad a aquella que el coachee considere más importante.</p>
                                                                 <p>
                                                                     DURACION: 3 a 6 meses con 4 sesiones por mes. Depende de los objetivos planteados.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <span class="boton-top"><i class="fa fa-angle-double-up"></i></span>
+                                    </div>
+                                    <!-- tab Team Building -->
+                                    <div class="tab-content" id="team-building" style="">
+                                        <div class="block full fadeInDownBig animated">
+                                            <div class="col-md-12">
+                                                <div class="text-center">
+                                                    <div class="col-md-2"></div>
+                                                    <div class="col-md-1">
+                                                        <img src="img/conf4.jpg" alt="Team Biulding" class="eval_img text-center ico_thumb_img">
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <strong class="color_strong_capital">TEAM BUILDING</strong>
+                                                    </div>
+                                                    <div class="col-md-2"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center fadeInUpBig animated" style="margin-top: 15px; margin-bottom: 15px;">
+                                            <img src="img/timeline-divider.png" class="div_img text-center" style="opacity: 0.3;">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="col-md-6 fadeInRightBig animated">
+                                                    <div class="col-md-12">
+                                                        <div class="one_test_link" style="">
+                                                            <img src="img/img-gall1.jpg" alt="Conferencias de alto impacto" class="eval_img text-center" style="width: 100%; height: auto; margin-bottom: 20px;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 fadeInLeftBig animated">
+                                                    <div class="one_test_link" style="">
+                                                        <div class="widget-content themed-background-dark-default text-light-op text-center">
+                                                            <strong class="color_strong_title">SOLO SOBREVIVIR O TRIUNFAR EN EQUIPO</strong>
+                                                            <div class="clearfix"></div>
+                                                            <div class="desc-wrap text-justify">
+                                                                <p>
+                                                                    Este taller trabaja con los talentos individuales y los saca a la luz, para que aporten al trabajo en equipo, el trabajo puede ser totalmente en salón o una parte en al aire libre.
+                                                                </p>
+                                                                <p><b>BENEFICIOS:</b></p>
+                                                                <p>
+                                                                    <ul>
+                                                                        <li>De manera individual, reconocer mis talentos.</li>
+                                                                        <li>Sinergia en el equipo.</li>
+                                                                        <li>Mejor ambiente de trabajo</li>
+                                                                        <li>Comunicación más directa.</li>
+                                                                        <li>Madurez emocional.</li>
+                                                                        <li>Acciones con dirección y resultados.</li>
+                                                                        <li>Compromiso en los participantes de equipo.</li>
+                                                                    </ul>
+                                                                </p>
+                                                                <p><b>OBJETIVOS PRINCIPALES:</b></p>
+                                                                <p>
+                                                                    <ul>
+                                                                        <li>Darme cuenta de mis talentos y ponerlos a mi servicio y del equipo de trabajo.</li>
+                                                                        <li>Saber cuáles son las formas de trabajar en equipo.</li>
+                                                                        <li>“Servirme sirviendo” es decir, cuando aporto al equipo el que más se beneficia soy yo.</li>
+                                                                        <li>Integración del equipo de trabajo.</li>
+                                                                        <li>Generar un ambiente de trabajo armonioso y de calidad humana.</li>
+                                                                    </ul>
+                                                                </p>
+                                                                <p>
+                                                                    DURACION: 8, 16 Y 20 horas.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="text-center fadeInUpBig animated" style="margin-top: 15px; margin-bottom: 15px;">
+                                            <img src="img/timeline-divider.png" class="div_img text-center" style="opacity: 0.3;">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="col-md-6 fadeInRightBig animated">
+                                                    <div class="col-md-12">
+                                                        <div class="one_test_link" style="">
+                                                            <img src="img/img-gall2.jpg" alt="Conferencias de alto impacto" class="eval_img text-center" style="width: 100%; height: auto; margin-bottom: 20px;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 fadeInLeftBig animated">
+                                                    <div class="one_test_link" style="">
+                                                        <div class="widget-content themed-background-dark-default text-light-op text-center">
+                                                            <strong class="color_strong_title">TEAM BUILDING (OTUT-DOOR)</strong>
+                                                            <div class="clearfix"></div>
+                                                            <div class="desc-wrap text-justify">
+                                                                <p>
+                                                                    Es un TALLER, en el que se trabaja  fuera de salón, en contacto con la naturaleza. Puede ser con actividades extremas (como escalada, rappel, tirolesa). Con el objetivo de crear equipos de alto rendimiento. Un entrenamiento de este tipo impulsa al participante a generar cambios de paradigmas y creencias.
+                                                                </p>
+                                                                <p><b>BENEFICIOS:</b></p>
+                                                                <p>
+                                                                    <ul>
+                                                                        <li>Crear sinergia y trabajo en equipo.</li>
+                                                                        <li>Trabajar con miedos y fobias</li>
+                                                                        <li>Liberar obstáculos y ampliar visión.</li>
+                                                                        <li>Romper paradigmas</li>
+                                                                        <li>Mejora la comunicación notablemente.</li>
+                                                                    </ul>
+                                                                </p>
+                                                                <p><b>OBJETIVOS PRINCIPALES:</b></p>
+                                                                <p>
+                                                                    <ul>
+                                                                        <li>Integración del equipo de trabajo, unión y sinergia.</li>
+                                                                        <li>Trabajar miedos, que limitan al equipo.</li>
+                                                                        <li>Contactar con la parte humana</li>
+                                                                        <li>Trabajar con las actitudes.</li>
+                                                                        <li>Conciencia de la trascendencia que tiene cada integrante del equipo</li>
+                                                                        <li>Por ser un taller en contacto con la naturaleza, los participantes se abren.</li>
+                                                                        <li>El líder toma decisiones en conjunto</li>
+                                                                    </ul>
+                                                                </p>
+                                                                <p>
+                                                                    DURACION: 6, 8, 12 y 16 horas.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1054,7 +1178,7 @@
             </script>
             <script>
                 $(window).scroll(function(){
-                    if ($(this).scrollTop() > 1880) {
+                    if ($(this).scrollTop() > 1985) {
                         $('.boton-top').fadeIn();
                     } else {
                         $('.boton-top').fadeOut();
@@ -1062,7 +1186,7 @@
                 });
 
                 $('.boton-top').click(function(){
-                    $(document.body).animate({scrollTop : 1880}, 1100);
+                    $(document.body).animate({scrollTop : 1985}, 1100);
                     return false;
                 });
             </script>

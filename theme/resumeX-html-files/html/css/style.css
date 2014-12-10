@@ -866,6 +866,7 @@ p.tar {
 /** section contact start **/
 .section-contact {
     padding-top:0px;
+    background-color: #248a97;
 }
 .location-map {
     width:100%;
@@ -937,7 +938,7 @@ p.tar {
 }
 .contact-form {
     text-align:center;
-    background-color:#fff;
+    background-color: #248a97;
     height:400px;
     position:static;
     bottom:-388px;
@@ -2035,4 +2036,9 @@ filter: gray; /* IE6-9 */
 .firstHeading{
     margin-top: 0px;
     font-size: 14px;
+}
+
+
+.row-block {
+    height: 400px;
 }

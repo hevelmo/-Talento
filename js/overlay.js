@@ -64,3 +64,13 @@ function get_overlay_c13() {
 	    });
 	});
 /* END Tabs */
+/* Tabs click img */
+	$(document).ready(function() {
+		$( "#tab-conferencias" ).click(function() {
+		  	$( "li.nav-conferencias a" ).css( {
+		  		"background-color":"#0099A8",
+		  		"color":"#fff"
+		  	});
+		});
+	});
+/* END Tabs click img */

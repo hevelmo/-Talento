@@ -331,6 +331,7 @@
 
 
 /*==Google MAP==*/
+/*
 function initialize() {
     var image = 'img/map-marker.png';
     var myLatlng = new google.maps.LatLng(41.850033, -87.6500523);
@@ -377,8 +378,8 @@ function initialize() {
     });
 
 }
-
 google.maps.event.addDomListener(window, 'load', initialize);
+*/
 
 
 /*==WOW JS==*/

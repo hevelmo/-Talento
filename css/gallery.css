@@ -72,6 +72,9 @@
 	background: #0099A8;
 	cursor: pointer;
 	padding: 10px;
+	left: -10px;
+	position: relative;
+	bottom: 0px;
 }
 /* AJAX Gif y mensajes de exito o fracaso */
 
