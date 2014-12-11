@@ -64,12 +64,72 @@ function get_overlay_c13() {
 	    });
 	});
 /* END Tabs */
-/* Tabs click img */
+/* Tabs click img
 	$(document).ready(function() {
 		$( "#tab-conferencias" ).click(function() {
-		  	$( "li.nav-conferencias a" ).css( {
-		  		"background-color":"#0099A8",
+		  	$( "li.filter.nav-conferencias" ).css( {
+		  		"background-color":"#0099A8"
+		  	});
+		  	$( "a.conf" ).css( {
 		  		"color":"#fff"
+		  	});
+		});
+		$( "#tab-talleres" ).click(function() {
+		  	$( "li.filter.nav-talleres" ).css( {
+		  		"background-color":"#0099A8"
+		  	});
+		  	$( "a.tall" ).css( {
+		  		"color":"#fff"
+		  	});
+		});
+		$( "#tab-coaching" ).click(function() {
+		  	$( "li.filter.nav-coaching" ).css( {
+		  		"background-color":"#0099A8"
+		  	});
+		  	$( "a.coac" ).css( {
+		  		"color":"#fff"
+		  	});
+		});
+		$( "#tab-teambuilding" ).click(function() {
+		  	$( "li.filter.nav-teambuilding" ).css( {
+		  		"background-color":"#0099A8"
+		  	});
+		  	$( "a.team" ).css( {
+		  		"color":"#fff"
+		  	});
+		});
+
+
+		$( "li.nav-servicios" ).click(function() {
+		  	$( "li.filter.nav-conferencias" ).css( {
+		  		"background-color":"#fff"
+		  	});
+		  	$( "a.conf" ).css( {
+		  		"color":"#248a97"
+		  	});
+		});
+		$( "li.nav-servicios" ).click(function() {
+		  	$( "li.filter.nav-talleres" ).css( {
+		  		"background-color":"#fff"
+		  	});
+		  	$( "a.tall" ).css( {
+		  		"color":"#248a97"
+		  	});
+		});
+		$( "li.nav-servicios" ).click(function() {
+		  	$( "li.filter.nav-coaching" ).css( {
+		  		"background-color":"#fff"
+		  	});
+		  	$( "a.coac" ).css( {
+		  		"color":"#248a97"
+		  	});
+		});
+		$( "li.nav-servicios" ).click(function() {
+		  	$( "li.filter.nav-teambuilding" ).css( {
+		  		"background-color":"#fff"
+		  	});
+		  	$( "a.team" ).css( {
+		  		"color":"#248a97"
 		  	});
 		});
 	});
