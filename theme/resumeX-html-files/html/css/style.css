@@ -180,17 +180,19 @@ a,a:hover,a:focus {
     padding-left:30px;
 }
 h1.section-heading {
-    margin:0px;
-    margin-top:-10px;
-    font-family:'Raleway',sans-serif;
-    font-size:62px;
-    font-weight:900;
-    background-color:#0099A8;
-    padding:10px 30px;
-    border-radius:4px;
-    text-align:center;
-    color:#fff;
+    margin: 0px;
+    margin-top: -10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62px;
+    font-weight: 900;
+    /* background-color: #0099A8; */
+    /* padding: 10px 30px; */
+    border-radius: 4px;
+    text-align: center;
+    color: #000;
     display: inline-block;
+    font-weight: 100;
+    font-style: normal;
 }
 h2.section-subheading {
     margin:0px;
@@ -231,11 +233,11 @@ h2.section-subheading.about {
     margin:0px 0 0 -70px;
 }
 .text.about p {
-    font-size:16px;
+    font-size:20px;
     line-height:32px;
     padding-top:20px;
     color:#292c34;
-    font-weight:400;
+    font-weight:100;
 }
 .sign {
     margin-top:50px;
@@ -825,11 +827,11 @@ p.tar {
     font-size:22px;
     font-style:italic;
     color:#a1a1a1;
-    font-family:"Times New Roman",'Roboto',sans-serif;
+    font-family:'Roboto',sans-serif;
     padding-top:30px;
 }
 .quote p {
-    font-family:"Times New Roman",'Roboto',sans-serif;
+    font-family:'Roboto',sans-serif;
     font-weight:normal;
 }
 .left-arrow,.right-arrow {
@@ -939,7 +941,7 @@ p.tar {
 .contact-form {
     text-align:center;
     background-color: #248a97;
-    height:400px;
+    height:425px;
     position:static;
     bottom:-388px;
     -webkit-transition:all 0.3s;
@@ -1711,7 +1713,7 @@ ol.comment-list {
     top:-10px;
 }
 .q-poster {
-    font-family:"Times New Roman",'Roboto',sans-serif;
+    font-family:'Roboto',sans-serif;
     font-style:italic;
     font-size:20px;
 }
@@ -1826,21 +1828,21 @@ background-color: #0099A8;
 
 .main-title{
     font-size: 70px;
-    font-weight: 900;
+    font-weight: 300;
     letter-spacing: 3px;
     margin-bottom: 0;
     margin-top: 0;
     text-transform: uppercase;
     color: #fff;
-    font-family: 'Raleway',sans-serif;
+    font-family:'Roboto',sans-serif;
 }
 .info-title{
     font-size: 28px;
-    font-weight: 100;
+    font-weight: initial;
     letter-spacing: 2px;
     margin-bottom: 50px;
     margin-top: 10px;
-    font-family: 'Raleway',sans-serif;
+    font-family:'Roboto',sans-serif;
     color: #fff;
 }
 

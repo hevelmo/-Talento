@@ -1,0 +1,68 @@
+/*=Default Color #248a97=*/
+a,a:hover,a:focus,.post-content a:hover,.post-content a:focus,.blog .pagination>li.active>a,.blog .pagination>li>a:hover,.blog .pagination>li.active>a:hover,.tag-social ul li a:hover,.blog-cmnt .media-heading a:hover,.blog-tags a:hover,.blog-post h5 a:hover,.blog-post h5 a:focus,.blog-post ul li a:hover,.blog-post ul li a:focus,.twitter-feed a,.contact-form h3,.blog h1 a:hover,.blog h1 a:focus,.auth-row a:hover,.auth-row a:hover,.section-testimonial .details h2,.data-heading,.skill-heading,.skillnews h2,.navigation ul li.current>a,.navigation ul li a:hover,.navigation ul li a:focus,.navigation ul li a:active,.map-header .map-link i {
+    color:#248a97;
+}
+/*h1.section-heading,*/.section-counter,.btn-search,.btn-view-all,.btn-post-cmnt,.bl-status .reply:hover,.blog-tags a.btn-share,.toggle-contact-form,.btn-contact,.custombtn:hover,.timeline-marker,.reddot,.tags ul li.selected,.tags ul li:hover,.map-header,.map-header .map-link {
+    background-color:#248a97;
+}
+.btn-contact {
+    background-color: #fff;
+    color: #000;
+}
+:focus {outline:none; box-shadow: none;}
+.btn-contact:hover, .btn-contact:focus, .btn-contact:active {
+    outline: none;
+    background-color: #6EBDB1;
+    color: #000;
+}
+.contact-form h3 {
+    color: #fff;
+}
+h1.section-heading {
+    font-size: 1,75em;
+}
+
+.color_strong_capital {
+    font-size: 35px;
+    color: #248a97;
+    font-weight: lighter;
+}
+.color_strong_title {
+    color: #248a97;
+    font-size: 1.65em;
+    font-weight: 100;
+}
+.arrow-left {
+    border-color:transparent #248a97 transparent transparent;
+}
+.arrow-right {
+    border-color:transparent transparent transparent #248a97;
+}
+.tags ul li a {
+    color: #248a97;
+}
+.tags ul li:hover a {
+    color: #fff;
+}
+.tags ul li.selected,.tags ul li:hover{
+    border-color:#248a97;
+    color: #fff;
+}
+.tags ul li.selected a {
+    border-color:#248a97;
+    color: #fff;
+}
+.location-map {
+    border-bottom:#248a97 6px solid;
+}
+.map-header {
+    border-bottom:10px solid #248a97;
+    background: #248a97;
+}
+.contact-form {
+    /*border-top:#248a97 3px solid;*/
+    border-bottom:#248a97 6px solid;
+}
+.form-toggle-icon {
+    border: #248a97 3px solid;
+}
