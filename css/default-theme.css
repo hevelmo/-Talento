@@ -19,18 +19,22 @@ a,a:hover,a:focus,.post-content a:hover,.post-content a:focus,.blog .pagination>
     color: #fff;
 }
 h1.section-heading {
-    font-size: 1,75em;
+    font-size: 64px;
 }
 
 .color_strong_capital {
-    font-size: 35px;
+    font-size: 42px;
     color: #248a97;
     font-weight: lighter;
 }
 .color_strong_title {
     color: #248a97;
-    font-size: 1.65em;
+    font-size: 22px;
     font-weight: 100;
+    text-align: left;
+    display: block;
+    height: 60px;
+    padding-left: 15px;
 }
 .arrow-left {
     border-color:transparent #248a97 transparent transparent;

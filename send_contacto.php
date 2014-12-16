@@ -6,7 +6,7 @@
 
 	$mail_origin = 'info@maztalentos.com';
 
-	$to = 'hevelmo060683@gmail.com';
+	$to = 'info@maztalentos.com';
 	//$to = 'ricardo@maztalentos.com;
 	$subject = "Contacto maztalentos";
 
