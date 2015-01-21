@@ -939,9 +939,8 @@ p.tar {
 .contact-form {
     text-align:center;
     background-color: #248a97;
-    height:425px;
+    height:auto;
     position:static;
-    bottom:-388px;
     -webkit-transition:all 0.3s;
     -moz-transition:all 0.3s;
     transition:all 0.3s;
@@ -1002,7 +1001,7 @@ p.tar {
     font-size:20px;
 }
 .contact-form .form-container {
-    padding:20px 50px 50px 50px;
+    padding:20px 50px 0px 50px;
 }
 .contact-form.panel-show {
     bottom:6px !important;
@@ -1021,7 +1020,7 @@ p.tar {
 }
 .footer {
     background-color:#424242;
-    padding:40px 0;
+    padding:5px 0;
     color:#c2c3c3;
 }
 .footer p {
@@ -2040,4 +2039,71 @@ filter: gray; /* IE6-9 */
 
 .row-block {
     height: 310px;
+}
+
+.medigraf{
+    width: 35px;
+  height: 20px;
+  position: relative;
+  top: 26px;
+  background: url('../img/medigraf.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 30px 15px;
+  background-size: 30px 15px;
+  margin-top: 12px;
+  -webkit-transition-duration: .3s;
+  -moz-transition-duration: .3s;
+  -o-transition-duration: .3s;
+  -ms-transition-duration: .3s;
+}
+.medigraf:hover{
+    width: 35px;
+    height: 20px;
+    position: relative;
+    top: 26px;
+    background: url('../img/medigraf-hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: 30px 15px;
+    background-size: 30px 15px;
+    margin-top: 12px;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    -ms-transition-duration: .3s;
+}
+
+@media (min-width: 320px) {
+  .block_address_contact .img_resp {
+    display: block;
+    margin: -20px 35% -20px 35%;
+    font-size: 6em;
+  }
+  .block_address_contact p.parrafo {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: -65px;
+  }
+  .button_resp {
+    width: 100%;
+    margin: -5px auto 5px auto;
+  }
+}
+/* Desktop small screen */
+@media (min-width: 992px) {
+  .block_address_contact .img_resp {
+    display: block;margin: 20px auto -40px auto;
+    font-size: 4em;
+  }
+  .block_address_contact p.parrafo {
+    font-size: 17px;
+    text-align: left;
+    margin-bottom: 2px;
+    margin-top: 23px;
+  }
+  .button_resp {
+    width: 25%
+  }
+
 }

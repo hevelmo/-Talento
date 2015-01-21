@@ -32,8 +32,14 @@
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,700' rel='stylesheet' type='text/css'>
         <link href='css/gallery.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/font-maztalentos.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/font-lineicons.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/ticon-plus.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/talent-plus.css" type="text/css" media="all" />
     </head>
     <body class="royal_loader">
+        <div class="inicio" id="inicio"></div>
         <!--home section -->
             <div class="tp-banner-container" id="">
                 <div class="tp-banner">
@@ -72,16 +78,16 @@
                                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                         <span class="fa fa-bars"></span>
                                     </button>
-                                    <a class="sticky-logo" href="index.html">
+                                    <a class="sticky-logo" href="/">
                                         <img src="img/+T_logo_thumb.png" alt=""/>
                                     </a>
                                 </div>
                                 <div class="navbar-collapse collapse ddsmoothmenu" id="smoothmenu1">
                                     <ul class="nav navbar-nav pull-right top-nav sf-menu">
-                                        <li><a href="#slides">Inicio</a></li>
+                                        <li><a href="#inicio">Inicio</a></li>
                                         <li><a href="#about-me">Sobre mi</a></li>
-                                        <li><a href="#portfolio">Servicios</a></li>
-                                        <li><a href="#contact">Contacto</a></li>
+                                        <li><a href="#servicios">Servicios</a></li>
+                                        <li><a href="#contacto">Contacto</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -137,7 +143,7 @@
         <div class="clear">
         </div>
         <!--section portfolio -->
-            <div class="section-portfolio" id="portfolio">
+            <div class="section-portfolio" id="servicios">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -1021,16 +1027,17 @@
             </div>
         <!--section portfolio end-->
         <!--section contact -->
-            <div class="section-contact wow bounceInUp">
-                <div class="map-header" id="contact">
+            <div class="section-contacto wow bounceInUp">
+                <div class="map-header" id="contacto">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="footer" style="background-color: rgba(66, 66, 66, 0); color: rgba(255,255,255,1);">
                                     <div class="container">
-                                        <div class="wow slideInLeft">
-                                            <img src="img/+T_logo_thumb.png" alt="" style="margin-bottom: 25px;">
-                                            <p style="color: rgba(255,255,255,1);">
+                                        <div class="block_address_contact wow slideInLeft">
+                                            <i class="icon ipt-icon-plus-t-bold img_resp" style=""></i>
+                                            <!--<img src="img/+T_logo_thumb.png" alt="" style="margin-bottom: 25px;">-->
+                                            <p class="parrafo" style="color: rgba(255,255,255,1);"
                                                 Ricardo Gallegos Ornelas <br/>
                                                 Apasionado del Desarrollo Humano
                                             </p>
@@ -1065,14 +1072,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-9">
+                            <div class="col-md-8">
                                 <div class="contact-form panel-hide wow slideInRight">
                                     <div class="form-container">
-                                        <div class="toggle-contact-form">
+                                        <!--<div class="toggle-contact-form">
                                             <a href="#" class="form-toggle-icon">
                                                 <i class="fa fa-envelope-o"></i>
                                             </a>
-                                        </div>
+                                        </div>-->
                                         <!--<h3 class="wow bounceIn" data-wow-duration="2s" data-wow-delay="0s"><i class="fa fa-smile-o fa-2x fa-fw fa-lg"></i> Contacto</h3>-->
                                         <!--<h1 class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0s" style="color: #fff; margin-bottom:25px;">Contacto</h1>-->
                                         <form role="form" method="post" class="contacto">
@@ -1095,16 +1102,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer" style="height: 5px; padding: 0;">
+                <!--<div class="footer" style="height: 5px; padding: 0;">
                     <div class="container">
                     </div>
-                </div>
+                </div>-->
                 <div class="copyright">
                     <div class="container wow slideInUp">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-10">
                                 &copy; 2015 <a href="http://www.maztalentos.com/" target="_blank">+Talentos</a>. Ricardo Gallegos Ornelas - Apasionado del Desarrollo Humano
                             </div>
+                            <div class="col-md-2">
+                                <div class="medigraf"></div>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>

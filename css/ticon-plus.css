@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "ticon-plus";
+  src:url("../fonts/ticon-plus.eot");
+  src:url("../fonts/ticon-plus.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ticon-plus.woff") format("woff"),
+    url("../fonts/ticon-plus.ttf") format("truetype"),
+    url("../fonts/ticon-plus.svg#ticon-plus") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "ticon-plus" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="tips-"]:before,
+[class*=" tips-"]:before {
+  font-family: "ticon-plus" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tips-teamicons-01:before {
+  content: "\e000";
+}
+.tips-teamicons-02:before {
+  content: "\e001";
+}
+.tips-teamicons-03:before {
+  content: "\e002";
+}
+.tips-teamicons-04:before {
+  content: "\e003";
+}
+.tips-teamicons-05:before {
+  content: "\e004";
+}
+.tips-teamicons-06:before {
+  content: "\e005";
+}
+.tips-teamicons-07:before {
+  content: "\e006";
+}
+.tips-teamicons-08:before {
+  content: "\e007";
+}
+.tips-teamicons-09:before {
+  content: "\e008";
+}
+.tips-teamicons-10:before {
+  content: "\e009";
+}
+.tips-teamicons-11:before {
+  content: "\e00a";
+}
+.tips-teamicons-12:before {
+  content: "\e00b";
+}
+.tips-teamicons-13:before {
+  content: "\e00c";
+}
+.tips-teamicons-26:before {
+  content: "\e00d";
+}
+.tips-teamicons-25:before {
+  content: "\e00e";
+}
+.tips-teamicons-24:before {
+  content: "\e00f";
+}
+.tips-teamicons-23:before {
+  content: "\e010";
+}
+.tips-teamicons-22:before {
+  content: "\e011";
+}
+.tips-teamicons-21:before {
+  content: "\e012";
+}
+.tips-teamicons-20:before {
+  content: "\e013";
+}
+.tips-teamicons-19:before {
+  content: "\e014";
+}
+.tips-teamicons-18:before {
+  content: "\e015";
+}
+.tips-teamicons-17:before {
+  content: "\e016";
+}
+.tips-teamicons-16:before {
+  content: "\e017";
+}
+.tips-teamicons-15:before {
+  content: "\e018";
+}
+.tips-teamicons-14:before {
+  content: "\e019";
+}
+.tips-teamicons-27:before {
+  content: "\e01a";
+}
+.tips-teamicons-28:before {
+  content: "\e01b";
+}
+.tips-teamicons-29:before {
+  content: "\e01c";
+}
+.tips-teamicons-30:before {
+  content: "\e01d";
+}
+.tips-teamicons-31:before {
+  content: "\e01e";
+}
+.tips-teamicons-32:before {
+  content: "\e01f";
+}
+.tips-teamicons-33:before {
+  content: "\e020";
+}
+.tips-teamicons-34:before {
+  content: "\e021";
+}
+.tips-teamicons-35:before {
+  content: "\e022";
+}
+.tips-teamicons-36:before {
+  content: "\e023";
+}
