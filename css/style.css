@@ -180,8 +180,8 @@ a,a:hover,a:focus {
     padding-left:30px;
 }
 h1.section-heading {
-    margin: 0px;
-    margin-top: -10px;
+    /*margin: 0px;
+    margin-top: -10px;*/
     font-family: 'Roboto', sans-serif;
     font-size: 62px;
     font-weight: 900;
@@ -1001,7 +1001,7 @@ p.tar {
     font-size:20px;
 }
 .contact-form .form-container {
-    padding:20px 50px 0px 50px;
+    padding:30px 10px 0px 10px;
 }
 .contact-form.panel-show {
     bottom:6px !important;
@@ -1482,7 +1482,7 @@ blockquote p {
     border-left-color:#f1f1f1;
     border-width:5px;
     margin-top:-5px;
-}
+1}
 .tag-social ul li {
     float:left;
 }
@@ -2041,7 +2041,22 @@ filter: gray; /* IE6-9 */
     height: 310px;
 }
 
-.medigraf{
+.medigraf
+{
+    width: 25px;
+    height: 15px;
+    position: relative;
+    top: 26px;
+    background-image:url('../img/sprite-logo.png');
+    background-position: 0px 0px;
+    margin-top: 12px;
+}
+
+.medigraf:hover
+    {
+        background-position: 0px -15px;
+    }
+/*.medigraf{
     width: 35px;
   height: 20px;
   position: relative;
@@ -2072,18 +2087,17 @@ filter: gray; /* IE6-9 */
     -moz-transition-duration: .3s;
     -o-transition-duration: .3s;
     -ms-transition-duration: .3s;
-}
+}*/
 
 @media (min-width: 320px) {
   .block_address_contact .img_resp {
     display: block;
-    margin: -20px 35% -20px 35%;
+    margin: 20px 35% -20px 35%;
     font-size: 6em;
   }
   .block_address_contact p.parrafo {
     font-size: 19px;
     text-align: center;
-    margin-bottom: -65px;
   }
   .button_resp {
     width: 100%;
