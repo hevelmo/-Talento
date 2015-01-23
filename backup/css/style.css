@@ -1045,11 +1045,10 @@ p.tar {
 }
 .copyright {
     background-color:#363636;
-    /*height:105px;
-    line-height:105px;*/
+    height:105px;
+    line-height:105px;
     color:#c2c3c3;
     font-size:12px;
-    padding: 20px;
 }
 .tweet-arrow {
     width:46px;
@@ -2047,39 +2046,48 @@ filter: gray; /* IE6-9 */
     width: 25px;
     height: 15px;
     position: relative;
-    top: 0px;
+    top: 26px;
     background-image:url('../img/sprite-logo.png');
     background-position: 0px 0px;
-    margin-top: 0px;
+    margin-top: 12px;
 }
 
 .medigraf:hover
     {
         background-position: 0px -15px;
     }
-
-.copyrightparrafo {text-align: justify;margin-top: 13px;}
-.linkmedigraf {
-    float: right;
+/*.medigraf{
+    width: 35px;
+  height: 20px;
+  position: relative;
+  top: 26px;
+  background: url('../img/medigraf.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: 30px 15px;
+  background-size: 30px 15px;
+  margin-top: 12px;
+  -webkit-transition-duration: .3s;
+  -moz-transition-duration: .3s;
+  -o-transition-duration: .3s;
+  -ms-transition-duration: .3s;
+}
+.medigraf:hover{
+    width: 35px;
+    height: 20px;
     position: relative;
-    top: -5px;
-    z-index: 10000;
-    right: -75%;
-}
-
-.video {
-   position: relative;
-   padding-bottom: 2%;
-   overflow: hidden;
-   top: 30px;
-}
-.video iframe {
-    position: relative;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 245px;
-}
+    top: 26px;
+    background: url('../img/medigraf-hover.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: 30px 15px;
+    background-size: 30px 15px;
+    margin-top: 12px;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    -ms-transition-duration: .3s;
+}*/
 
 @media (min-width: 320px) {
   .block_address_contact .img_resp {
@@ -2095,21 +2103,6 @@ filter: gray; /* IE6-9 */
     width: 100%;
     margin: -5px auto 5px auto;
   }
-  .copyrightparrafo {
-  }
-  .linkmedigraf {
-    float: left;
-    margin-top: 20px;
-    /*right: 43%;*/
-  }
-
-}
-@media (min-width: 768px) {
-    .linkmedigraf {
-        float: left;
-        margin-top: 20px;
-        /*right: 80%;*/
-    }
 }
 /* Desktop small screen */
 @media (min-width: 992px) {
@@ -2126,4 +2119,5 @@ filter: gray; /* IE6-9 */
   .button_resp {
     width: 25%
   }
+
 }

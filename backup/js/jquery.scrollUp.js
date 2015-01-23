@@ -39,11 +39,11 @@
 		} else {
 	        $self = $('<a/>', {
 	            id: o.scrollName,
-	            href: '#servicios',
+	            href: '#top',
 	            title: scrollTitle
 	        });
 		}
-        $self.appendTo('div.servicios');
+        $self.appendTo('body');
 
         // If not using an image display text
         if (!(o.scrollImg || o.scrollTrigger)) {
@@ -52,7 +52,7 @@
 
         // Minimum CSS to make the magic happen
         $self.css({
-            /*display: 'none',*/
+            display: 'none',
             position: 'fixed',
             zIndex: o.zIndex
         });
@@ -105,7 +105,7 @@
         animationInSpeed: 200, // Animation in speed (ms)
         animationOutSpeed: 200, // Animation out speed (ms)
 		scrollTrigger: false, // Set a custom triggering element. Can be an HTML string or jQuery object
-        scrollText: 'Servicios', // Text for element, can contain HTML
+        scrollText: 'Scroll to top', // Text for element, can contain HTML
         scrollTitle: false, // Set a custom <a> title if required. Defaults to scrollText
         scrollImg: false, // Set true to use image
         activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'

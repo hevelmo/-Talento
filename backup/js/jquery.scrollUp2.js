@@ -52,7 +52,7 @@
 
         // Minimum CSS to make the magic happen
         $self.css({
-            /*display: 'none',*/
+            display: 'none',
             position: 'fixed',
             zIndex: o.zIndex
         });
